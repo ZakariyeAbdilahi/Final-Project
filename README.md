@@ -84,5 +84,5 @@ You will see a prompt for your name and then for moves once an opponent joins.
 - Every finished game updates `player_stats.txt` to reflect winners, losers, and draws.
 
 ## Acknowledgments
-- Authors: [Zakariye Abdilahi & Jonathan]
+- Authors: [Zakariye Abdilahi & Jonathan Wang]
 - [Charlie Curtsinger]: For providing the starter code for server.c and client.c(Taken from CSC213: Operating Systems & Parallel Algorithms, Networking Excercise)
