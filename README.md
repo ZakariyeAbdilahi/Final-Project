@@ -31,7 +31,7 @@ The system consists of two main components:
    - Runs a separate thread to continuously receive server messages while the main thread handles user input.
 
 ## Files
-- **server.c**: The server implementation.
+- **server.c**: The server implementation(the game's logic is also implemented within here).
 - **client.c**: The client implementation.
 - **message.h/.c**: Message handling functions for sending and receiving data over sockets.
 - **socket.h**: Socket helper functions for setting up server and client connections.
@@ -40,7 +40,7 @@ The system consists of two main components:
 - **game_log_\<id\>.txt**: Generated at runtime for each game, detailing moves and final results.
 
 ## Building
-To build the project, ensure you have a C compiler and make sure the provided `Makefile` (if any) is configured correctly.
+To build the project, ensure you have a C compiler and make sure the provided `Makefile` is configured correctly.
 
 Run:
 ```bash
@@ -75,7 +75,7 @@ You will see a prompt for your name and then for moves once an opponent joins.
 1. **Name Input**: After connecting, enter your name when prompted.
 2. **Waiting/Opponent Found**: If no opponent is available, you will wait. Otherwise, the game starts immediately, and you’ll be assigned either Player X or O.
 3. **Making a Move**: Type row and column coordinates (1-based) like `1 2` to mark the top-middle cell.  
-4. **Quiting**: Type `quit` at any time to exit the match (the opponent wins by default).
+4. **Quiting**: Type `quit` at any time to exit the match.
 5. **Winning, Losing, Drawing**: The server detects wins, losses, or draws and notifies both players. Once the game ends, the server logs it.
 
 ## Logging and Stats
