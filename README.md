@@ -75,7 +75,7 @@ You will see a prompt for your name and then for moves once an opponent joins.
 1. **Name Input**: After connecting, enter your name when prompted.
 2. **Waiting/Opponent Found**: If no opponent is available, you will wait. Otherwise, the game starts immediately, and you’ll be assigned either Player X or O.
 3. **Making a Move**: Type row and column coordinates (1-based) like `1 2` to mark the top-middle cell.  
-4. **Quiting**: Type `quit` at any time to exit the match.
+4. **Quiting**: Type `quit` at any time to exit the match (the opponent wins by default).
 5. **Winning, Losing, Drawing**: The server detects wins, losses, or draws and notifies both players. Once the game ends, the server logs it.
 
 ## Logging and Stats
@@ -84,5 +84,5 @@ You will see a prompt for your name and then for moves once an opponent joins.
 - Every finished game updates `player_stats.txt` to reflect winners, losers, and draws.
 
 ## Acknowledgments
-- [Zakariye Abdilahi & Jonathan]
+- Authors: [Zakariye Abdilahi & Jonathan]
 - [Charlie Curtsinger]: For providing the starter code for server.c and client.c(Taken from CSC213: Operating Systems & Parallel Algorithms, Networking Excercise)
